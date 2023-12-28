@@ -1,2 +1,2 @@
 # DNS_filter
-Built a basic dns filter which aims to filter out blacklisted ip addresses.
+Built a basic dns filter which aims to filter out blacklisted ip addresses. The program takes in a dns query packet and sends it to google dns server to resolve the ip of the specified domain in the packet. Once the response packet is received then it checks if the packet contains a blacklisted ip address from the list and if it does then it replaces it with another ip before replying otherwise it replys with the packet without modifying.
